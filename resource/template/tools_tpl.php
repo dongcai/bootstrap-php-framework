@@ -6,7 +6,7 @@
 
 <div class="bs-header" id="content">
     <div class="container">
-        <h1>About DeNiX</h1>
+        <h1>Tools</h1>
         <p>DeNiX is nick name of bootstrap-php-framework.</p>
     </div>
 

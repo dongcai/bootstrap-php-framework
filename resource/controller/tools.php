@@ -7,15 +7,14 @@
 
 
 
-$page_title = 'About deniX';
-$meta_description = 'deniX is a simplicity php framework. Simple is key and never overkilled! deniX is powered by Bootstrap3 and supports friendly URL.';
+$page_title = 'Tools used to create deniX';
+$meta_description = 'PHP,Bootstrap,NetBeans are all you need to create a decent website';
 
 $bc_navis = array(
         "deniX" => SITE_BASE_URL,
-        "about" => null
+        "tools" => null
     );
 $breadcrumb = breadcrumb_gen($bc_navis);
-
 
 $variables = compact("page_title", "meta_description", "breadcrumb");
 

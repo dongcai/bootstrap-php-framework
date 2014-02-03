@@ -57,10 +57,10 @@ function navi_gen($navis, $controller = '', $prefix = '') {
             if (is_array($navi)) {
                 if(isset($navi['dropdown'])){
                     
-                    $d_urls['parent'] = navi_url_gen($navi);
+                    $d_urls['parent'] = navi_url_gen($navi, $controller, $prefix);
                     $d_urls['child'] = array(); 
                     foreach($navi['dropdown'] as $n=>$subnavi){
-                        $d_urls['child'][$n] = navi_url_gen($subnavi);
+                        $d_urls['child'][$n] = navi_url_gen($subnavi, $controller, $prefix);
                     }
                 }
                 else{
@@ -93,7 +93,7 @@ function navi_gen($navis, $controller = '', $prefix = '') {
     return $output;
 }
 
-function navi_url_gen($navi) {
+function navi_url_gen($navi, $controller, $prefix) {
     if (is_array($navi)) {
         $navi_controller = $navi['controller'];
         if ($controller == $navi_controller) {

@@ -11,9 +11,9 @@
  */
 class PageRender {
     public $controller;
+    public $action = '';
     public $_variables = array();
     private $_layout='default';
-    private $_action;
     
     
     public function __construct($controller, $variables) {
@@ -30,7 +30,7 @@ class PageRender {
     }
     
     public function setAction($action){
-        $this->_action = $action;
+        $this->action = $action;
     }
     
     public function set($k, $v=null){
